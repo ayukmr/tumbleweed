@@ -1,15 +1,15 @@
-import 'CoreLibs/object'
-import 'CoreLibs/graphics'
-import 'CoreLibs/sprites'
-import 'CoreLibs/animation'
+import "CoreLibs/object"
+import "CoreLibs/graphics"
+import "CoreLibs/sprites"
+import "CoreLibs/animation"
 
 local gfx <const> = playdate.graphics
 
-local heartImage = gfx.image.new('images/heart')
-local loadingImageTable = gfx.imagetable.new('images/loading')
+local heartImage = gfx.image.new("images/heart")
+local loadingImageTable = gfx.imagetable.new("images/loading")
 
 -- interface class
-class('Interface').extends()
+class("Interface").extends()
 
 -- create interface
 function Interface:init()

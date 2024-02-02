@@ -1,12 +1,12 @@
-import 'CoreLibs/object'
-import 'CoreLibs/graphics'
-import 'CoreLibs/sprites'
+import "CoreLibs/object"
+import "CoreLibs/graphics"
+import "CoreLibs/sprites"
 
 local gfx <const> = playdate.graphics
-local image = gfx.image.new('images/bullet')
+local image = gfx.image.new("images/bullet")
 
 -- bullet class
-class('Bullet').extends()
+class("Bullet").extends()
 
 -- create bullet
 function Bullet:init(posX, posY)

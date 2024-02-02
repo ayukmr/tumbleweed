@@ -1,12 +1,12 @@
-import 'CoreLibs/object'
-import 'CoreLibs/timer'
+import "CoreLibs/object"
+import "CoreLibs/timer"
 
-import 'interface'
-import 'player'
-import 'enemy'
+import "interface"
+import "player"
+import "enemy"
 
 -- game class
-class('Game').extends()
+class("Game").extends()
 
 -- create game
 function Game:init()

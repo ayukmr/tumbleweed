@@ -1,13 +1,13 @@
-import 'CoreLibs/object'
-import 'CoreLibs/graphics'
-import 'CoreLibs/sprites'
-import 'CoreLibs/animation'
+import "CoreLibs/object"
+import "CoreLibs/graphics"
+import "CoreLibs/sprites"
+import "CoreLibs/animation"
 
 local gfx <const> = playdate.graphics
-local imageTable = gfx.imagetable.new('images/tumbleweed')
+local imageTable = gfx.imagetable.new("images/tumbleweed")
 
 -- enemy class
-class('Enemy').extends()
+class("Enemy").extends()
 
 -- create enemy
 function Enemy:init(posX, posY)

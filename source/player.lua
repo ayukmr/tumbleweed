@@ -1,20 +1,20 @@
-import 'CoreLibs/object'
-import 'CoreLibs/graphics'
-import 'CoreLibs/sprites'
-import 'CoreLibs/timer'
-import 'CoreLibs/animation'
+import "CoreLibs/object"
+import "CoreLibs/graphics"
+import "CoreLibs/sprites"
+import "CoreLibs/timer"
+import "CoreLibs/animation"
 
-import 'bullet'
+import "bullet"
 
 local gfx <const> = playdate.graphics
 
 -- player class
-class('Player').extends()
+class("Player").extends()
 
 -- create player
 function Player:init(posX, posY)
     self:reset()
-    local imageTable = gfx.imagetable.new('images/player')
+    local imageTable = gfx.imagetable.new("images/player")
 
     -- animation and sprite
     self.animation = gfx.animation.loop.new(125, imageTable)
